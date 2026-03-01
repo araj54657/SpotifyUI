@@ -32,7 +32,7 @@ struct Product: Codable, Identifiable {
         brand ?? ""
     }
     
-    let recentlyAdded: Bool = {
+    var recentlyAdded: Bool = {
         return Int.random(in: 1...4) == 1
     }()
     
